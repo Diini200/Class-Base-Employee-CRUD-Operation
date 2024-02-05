@@ -1,0 +1,42 @@
+{% extends "testApp/base.html" %} 
+
+{% block body_block %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+    <title>Employee Details</title>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1>Employee Details</h1>
+
+        <ul>
+            <li> Employee First Name: {{ employee.first_name }} </li>
+            <li> Employee Last Name: {{ employee.last_name }} </li>
+            <li> Employee Email: {{ employee.Emp_email }} </li>
+            <li> Employee Address: {{ employee.Emp_address }} </li>
+            <li> Employee Number: {{ employee.Emp_number }} </li>
+            <li> Employee Salary: {{ employee.Emp_salary }} </li>
+            <li> Employee Join Date: {{ employee.Emp_Join_Date }} </li>
+            
+        
+
+        </ul>
+        <a href="/" class="btn btn-dark" role="button"> DashBoard </a>
+        
+       
+    </div>
+
+  
+  
+
+</body>
+
+</html>
+
+{% endblock %}

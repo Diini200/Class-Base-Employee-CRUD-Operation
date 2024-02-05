@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+{%  extends 'testApp/base.html' %}
+<html>
+    {% block body_block %}
+
+    <div class="container mt-5">
+   
+        <h1> Do you want to delete Employee First Name is :{{ employee.first_name }} and Last Name is</td>
+            {{ employee.last_name }}?? </h1>
+    
+        <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+    
+    
+        <input type="submit" value ="Delete" class="btn btn-danger btn-lg" >
+    
+        </from>
+           
+        </div>
+        {% endblock %}
+    
+</html>
+
